@@ -1,3 +1,6 @@
+:root {
+  --primary-font: Georgia, Times, "Times New Roman", serif;
+}
 .website-name {
   background-color: aqua;
   height: 80px;
@@ -5,7 +8,7 @@
   text-align: center;
   padding-top: 40px;
   font-size: 50px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: var(--primary-font);
 }
 
 .study-info {
@@ -21,6 +24,7 @@
   font-size: 50px;
   padding-top: 40px;
   padding-bottom: 20px;
+  font-family: var(--primary-font);
 }
 
 .summary {
@@ -58,4 +62,5 @@ button {
   text-decoration: none;
   cursor: pointer;
   text-align: center;
+  font-size: var(--primary-font);
 }
