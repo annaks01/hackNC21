@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rate a Study Spot</title>
+<script src="page3.js"></script>
+</head>
+
+<body>
+<button onClick="init()">Init</button>
+<br>
+
 <h1>Rate the Study Spot!</h1>
 <br>
 
@@ -14,6 +26,70 @@
 <br>
 
 <h3>Amenities</h3>
-<p>Does this study spot have charging spots?</p>
-<input type="radio" id = "yes" name = "chargingSpots"></input>
+<p>Does this study spot have gender neutral restrooms?</p>
+<input type="radio" id = "genderNeutralYes" name = "genderNeutral" value="Yes">
+<label for="genderNeutralYes">Yes</label>
+<input type="radio" id = "genderNeutralNo" name = "genderNeutral" value="No">
+<label for="genderNeutralNo">No</label>
+</input>
 <br>
+
+<p>Does this study spot have vending machines?</p>
+<input type="radio" id = "vendingMachinesYes" name = "vendingMachines" value="Yes">
+<label for="vendingMachineYes">Yes</label>
+<input type="radio" id = "vendingMachinesNo" name = "vendingMachines" value="No">
+<label for="vendingMachineNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot allow food and drinks?</p>
+<input type="radio" id = "foodYes" name = "food" value="Yes">
+<label for="foodYes">Yes</label>
+<input type="radio" id = "foodNo" name = "food" value="No">
+<label for="foodNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot have standing desks?</p>
+<input type="radio" id = "standingDesksYes" name = "standingDesks" value="Yes">
+<label for="standingDesksYes">Yes</label>
+<input type="radio" id = "standingDesksNo" name = "standingDesks" value="No">
+<label for="standingDesksNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot have printers?</p>
+<input type="radio" id = "printersYes" name = "printers" value="Yes">
+<label for="printersYes">Yes</label>
+<input type="radio" id = "printersNo" name = "printers" value="No">
+<label for="printersNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot have copiers?</p>
+<input type="radio" id = "copiersYes" name = "copiers" value="Yes">
+<label for="copiersYes">Yes</label>
+<input type="radio" id = "copiersNo" name = "copiers" value="No">
+<label for="copiersNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot provide phone chargers?</p>
+<input type="radio" id = "chargersYes" name = "chargers" value="Yes">
+<label for="chargersYes">Yes</label>
+<input type="radio" id = "chargersNo" name = "chargers" value="No">
+<label for="chargersNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot require your One Card to enter?</p>
+<input type="radio" id = "oneCardYes" name = "oneCard" value="Yes">
+<label for="oneCardYes">Yes</label>
+<input type="radio" id = "oneCardNo" name = "oneCard" value="No">
+<label for="oneCardNo">No</label>
+</input>
+<br>
+
+<button onclick="submit()">Submit Rating</button>
+</body>
+</html>
