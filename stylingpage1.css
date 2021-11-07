@@ -16,7 +16,7 @@
        background-color: rgb(29, 78, 95);
   }
   .website-name {
-      background-color: var(--primary-background);
+      background-color: var(--primary-color);
       height: 80px;
       width: 100%;
       text-align: center;
