@@ -1,7 +1,7 @@
-localStorage.setItem("initBeenCalled", false);
+localStorage.setItem("ulInitBeenCalled", false);
 
 function initRateUL() {
-    if(!localStorage.getItem("initBeenCalled")) {
+    if(!localStorage.getItem("ulInitBeenCalled")) {
         // gender neutral
         localStorage.setItem("genderNeutralYes", 0);
         localStorage.setItem("genderNeutralNo", 0);
@@ -71,7 +71,7 @@ function initRateUL() {
          localStorage.setItem("covidAverage", 0);
 
         // changing init var
-        localStorage.setItem("initBeenCalled", true);
+        localStorage.setItem("ulInitBeenCalled", true);
     }  
     
     console.log("on load of page 3: " + localStorage.getItem("genderNeutralPercent"));

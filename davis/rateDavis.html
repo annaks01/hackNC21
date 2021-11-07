@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rate a Study Spot</title>
+<link rel="stylesheet" href="./rateDavis.css">
+<script src="rateDavis.js"></script>
+</head>
+
+<body onload = "initRateDavis()">
+    
+<h1>Rate the Davis!</h1>
+<br>
+
+<h3>Physical Accessibility</h3>
+<input type="radio" id="accessibilityStar5" name="rate1" value="5" />
+    <label for="accessibilityStar5" title="text">5 stars⭐⭐⭐⭐⭐</label>
+    <input type="radio" id="accessibilityStar4" name="rate1" value="4" />
+    <label for="accessibilityStar4" title="text">4 stars</label>
+    <input type="radio" id="accessibilityStar3" name="rate" value="3" />
+    <label for="accessibilityStar3" title="text">3 stars</label>
+    <input type="radio" id="accessibilityStar2" name="rate1" value="2" />
+    <label for="accessibilityStar2" title="text">2 stars</label>
+    <input type="radio" id="accessibilityStar1" name="rate1" value="1" />
+    <label for="accessibilityStar1" title="text">1 star</label>
+<br>
+
+<h3>Atmosphere</h3>
+<input type="radio" id="atmosphereStar5" name="rate2" value="5" />
+    <label for="atmosphereStar5" title="text">5 stars</label>
+    <input type="radio" id="atmosphereStar4" name="rate2" value="4" />
+    <label for="atmosphereStar4" title="text">4 stars</label>
+    <input type="radio" id="atmosphereStar3" name="rate2" value="3" />
+    <label for="atmosphereStar3" title="text">3 stars</label>
+    <input type="radio" id="atmosphereStar2" name="rate2" value="2" />
+    <label for="atmosphereStar2" title="text">2 stars</label>
+    <input type="radio" id="atmosphereStar1" name="rate2" value="1" />
+    <label for="atmosphereStar1" title="text">1 star</label>
+<br>
+
+<h3>Support</h3>
+<input type="radio" id="supportStar5" name="rate3" value="5" />
+    <label for="supportStar5" title="text">5 stars</label>
+    <input type="radio" id="supportStar4" name="rate3" value="4" />
+    <label for="supportStar4" title="text">4 stars</label>
+    <input type="radio" id="supportStar3" name="rate3" value="3" />
+    <label for="supportStar3" title="text">3 stars</label>
+    <input type="radio" id="supportStar2" name="rate3" value="2" />
+    <label for="supportStar2" title="text">2 stars</label>
+    <input type="radio" id="supportStar1" name="rate3" value="1" />
+    <label for="supportStar1" title="text">1 star</label>
+<br>
+
+<h3>COVID-19</h3>
+<input type="radio" id="covidStar5" name="rate4" value="5" />
+    <label for="covidStar5" title="text">5 stars</label>
+    <input type="radio" id="covidStar4" name="rate4" value="4" />
+    <label for="covidStar4" title="text">4 stars</label>
+    <input type="radio" id="covidStar3" name="rate4" value="3" />
+    <label for="covidStar3" title="text">3 stars</label>
+    <input type="radio" id="covidStar2" name="rate4" value="2" />
+    <label for="covidStar2" title="text">2 stars</label>
+    <input type="radio" id="covidStar1" name="rate4" value="1" />
+    <label for="covidStar1" title="text">1 star</label>
+<br>
+
+<h3>Amenities</h3>
+<p>Does this study spot have gender neutral restrooms?</p>
+<input type="radio" id = "genderNeutralYes" name = "genderNeutral" value="Yes">
+<label for="genderNeutralYes">Yes</label>
+<input type="radio" id = "genderNeutralNo" name = "genderNeutral" value="No">
+<label for="genderNeutralNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot have vending machines?</p>
+<input type="radio" id = "vendingMachinesYes" name = "vendingMachines" value="Yes">
+<label for="vendingMachineYes">Yes</label>
+<input type="radio" id = "vendingMachinesNo" name = "vendingMachines" value="No">
+<label for="vendingMachineNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot allow food and drinks?</p>
+<input type="radio" id = "foodYes" name = "food" value="Yes">
+<label for="foodYes">Yes</label>
+<input type="radio" id = "foodNo" name = "food" value="No">
+<label for="foodNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot have standing desks?</p>
+<input type="radio" id = "standingDesksYes" name = "standingDesks" value="Yes">
+<label for="standingDesksYes">Yes</label>
+<input type="radio" id = "standingDesksNo" name = "standingDesks" value="No">
+<label for="standingDesksNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot have printers?</p>
+<input type="radio" id = "printersYes" name = "printers" value="Yes">
+<label for="printersYes">Yes</label>
+<input type="radio" id = "printersNo" name = "printers" value="No">
+<label for="printersNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot have copiers?</p>
+<input type="radio" id = "copiersYes" name = "copiers" value="Yes">
+<label for="copiersYes">Yes</label>
+<input type="radio" id = "copiersNo" name = "copiers" value="No">
+<label for="copiersNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot provide phone chargers?</p>
+<input type="radio" id = "chargersYes" name = "chargers" value="Yes">
+<label for="chargersYes">Yes</label>
+<input type="radio" id = "chargersNo" name = "chargers" value="No">
+<label for="chargersNo">No</label>
+</input>
+<br>
+
+<p>Does this study spot require your One Card to enter?</p>
+<input type="radio" id = "oneCardYes" name = "oneCard" value="Yes">
+<label for="oneCardYes">Yes</label>
+<input type="radio" id = "oneCardNo" name = "oneCard" value="No">
+<label for="oneCardNo">No</label>
+</input>
+<br>
+<br>
+
+<button onclick="submit()">Submit Rating</button>
+
+</body>
+</html>
