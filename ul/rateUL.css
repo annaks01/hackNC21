@@ -12,6 +12,8 @@
     padding-top: 40px;
     font-size: 40px;
     text-align: center;
+    padding-left: 5px;
+
   }
 
 .top-border {
@@ -24,8 +26,9 @@ background-color: rgb(29, 78, 95);
     /* font-size: 40px; */
     font-size: 20px;
     padding-top: 5px;
-    /* padding-bottom: 5px; */
+    padding-bottom: 0px;
     font-family: var(--primary-font);
+    padding-left: 5px;
   }
 
   .section-name-no-padding-bottom {
@@ -34,37 +37,39 @@ background-color: rgb(29, 78, 95);
     padding-top: 5px;
     /* padding-bottom: 5px; */
     font-family: var(--primary-font);
+    padding-left: 5px;
+
   }
 
   .accessibility {
     background-color: var(--primary-color);
-    height: 200px;
+    height: 180px;
     /* width: 50%; */
     /* float: left; */
   }
   .atmosphere {
     background-color: rgb(210, 239, 240);
-    height: 180px;
+    height: 190px;
     /* width: 50%; */
     /* float: left; */
   }
   .support {
     /* background-color: rgb(210, 239, 240); */
     background-color: rgba(252, 251, 243, 0.74);
-    height: 150px;
+    height: 180px;
     /* width: 50%; */
     /* float: left; */
   }
   .covid {
     background-color: rgb(210, 239, 240);
     /* background-color: rgba(252, 251, 243, 0.74); */
-    height: 150px;
+    height: 180px;
     /* width: 50%; */
     /* float: left; */
   }
   .amenities {
     background-color: var(--primary-color);
-    height: 680px;
+    height: 720px;
     /* width: 50%; */
     /* float: left; */
   }
@@ -72,6 +77,7 @@ background-color: rgb(29, 78, 95);
   button {
     background-color: rgb(0, 102, 150);
     display: block;
+    padding-left: 5px;
     padding: 10px 20px;
     color: rgb(255, 255, 255);
     box-sizing: border-box;
@@ -92,9 +98,20 @@ background-color: rgb(29, 78, 95);
   
 
 .description-text {
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-left: 5px;
     font-family: var(--secondary-font);
   }
   
+
+  .question-text {
+    font-size: 16px;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    font-family: var(--secondary-font);
+  }
