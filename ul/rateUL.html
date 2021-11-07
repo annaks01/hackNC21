@@ -8,129 +8,155 @@
 </head>
 
 <body onload = "initRateUL()">
-    
-<h1>Rate the UL!</h1>
+<div class="top-border"></div>
+<div class="yn-title">Rate the UL!</div>
 <br>
 
-<h3>Physical Accessibility</h3>
+<section class="accessibility">
+    <div class="section-name-no-padding-bottom">
+        <h3>Physical Accessibility</h3>
+    </div>
+    <div class="description-text"><p>Accessibility of study spot (1 being not accessible and 5 being accessible)</p></div>
+    <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 (Accessible)</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 (Not Accessibile)</label>
+</section>
+<br>
+<section class="atmosphere">
+    <div class="section-name-no-padding-bottom">
+        <h3>Atmosphere</h3>
+    </div>
+    <div class="description-text"><p>Quietness of study spot</p></div>
 <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars⭐⭐⭐⭐⭐</label>
+    <label for="star5" title="text">1 (Loud)</label>
     <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
+    <label for="star4" title="text">2</label>
     <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
+    <label for="star3" title="text">3</label>
     <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
+    <label for="star2" title="text">4</label>
     <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
+    <label for="star1" title="text">5 (Quiet)</label>
+</section>
 <br>
 
-<h3>Atmosphere</h3>
+<section class="support">
+    <div class="section-name-no-padding-bottom">
+        <h3>Support</h3>
+    </div>
+    <div class="description-text"><p>Supportiveness of study spot</p></div>
 <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
+    <label for="star5" title="text">5 (Supportive Environment)</label>
     <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
+    <label for="star4" title="text">4</label>
     <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
+    <label for="star3" title="text">3</label>
     <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
+    <label for="star2" title="text">2</label>
     <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
+    <label for="star1" title="text">1 (Not a Supportive Environment)</label>
+</section>
 <br>
 
-<h3>Support</h3>
+<section class="covid">
+    <div class="section-name-no-padding-bottom">
+        <h3>COVID-19</h3>
+    </div>
+    <div class="description-text"><p>COVID-conscious and regular enforcement of COVID-19</p></div>
 <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
+    <label for="star5" title="text">5 (COVID guidelines strictly enforced)</label>
     <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
+    <label for="star4" title="text">4</label>
     <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
+    <label for="star3" title="text">3</label>
     <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
+    <label for="star2" title="text">2</label>
     <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
+    <label for="star1" title="text">1 (Mask is not required)</label>
+</section>
 <br>
 
-<h3>COVID-19</h3>
-<input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-<br>
-
-<h3>Amenities</h3>
-<p>Does this study spot have gender neutral restrooms?</p>
+<section class="amenities">
+    <div class="section-name">
+        <h3>Amenities</h3>
+    </div>
+    <div class="description-text"><p>Amenities of study spot</p></div>
+<div class="description-text"><p>Amenities provided by the university</p></div>
 <input type="radio" id = "genderNeutralYes" name = "genderNeutral" value="Yes">
 <label for="genderNeutralYes">Yes</label>
 <input type="radio" id = "genderNeutralNo" name = "genderNeutral" value="No">
 <label for="genderNeutralNo">No</label>
 </input>
-<br>
+<!-- <br> -->
 
-<p>Does this study spot have vending machines?</p>
+<div class="description-text"><p>Does this study spot have vending machines?</p></div>
 <input type="radio" id = "vendingMachinesYes" name = "vendingMachines" value="Yes">
 <label for="vendingMachineYes">Yes</label>
 <input type="radio" id = "vendingMachinesNo" name = "vendingMachines" value="No">
 <label for="vendingMachineNo">No</label>
 </input>
-<br>
+<!-- <br> -->
 
-<p>Does this study spot allow food and drinks?</p>
+<div class="description-text"><p>Does this study spot allow food and drinks?</p></div>
 <input type="radio" id = "foodYes" name = "food" value="Yes">
 <label for="foodYes">Yes</label>
 <input type="radio" id = "foodNo" name = "food" value="No">
 <label for="foodNo">No</label>
 </input>
-<br>
+<!-- <br> -->
 
-<p>Does this study spot have standing desks?</p>
+<div class="description-text"><p>Does this study spot have standing desks?</p></div>
 <input type="radio" id = "standingDesksYes" name = "standingDesks" value="Yes">
 <label for="standingDesksYes">Yes</label>
 <input type="radio" id = "standingDesksNo" name = "standingDesks" value="No">
 <label for="standingDesksNo">No</label>
 </input>
-<br>
+<!-- <br> -->
 
-<p>Does this study spot have printers?</p>
+<div class="description-text"><p>Does this study spot have printers?</p></div>
 <input type="radio" id = "printersYes" name = "printers" value="Yes">
 <label for="printersYes">Yes</label>
 <input type="radio" id = "printersNo" name = "printers" value="No">
 <label for="printersNo">No</label>
 </input>
-<br>
+<!-- <br> -->
 
-<p>Does this study spot have copiers?</p>
+<div class="description-text"><p>Does this study spot have copiers?</p></div>
 <input type="radio" id = "copiersYes" name = "copiers" value="Yes">
 <label for="copiersYes">Yes</label>
 <input type="radio" id = "copiersNo" name = "copiers" value="No">
 <label for="copiersNo">No</label>
 </input>
-<br>
+<!-- <br> -->
 
-<p>Does this study spot provide phone chargers?</p>
+<div class="description-text"><p>Does this study spot provide phone chargers?</p></div>
 <input type="radio" id = "chargersYes" name = "chargers" value="Yes">
 <label for="chargersYes">Yes</label>
 <input type="radio" id = "chargersNo" name = "chargers" value="No">
 <label for="chargersNo">No</label>
 </input>
-<br>
+<!-- <br> -->
 
-<p>Does this study spot require your One Card to enter?</p>
+<div class="description-text"><p>Does this study spot require your One Card to enter?</p></div>
 <input type="radio" id = "oneCardYes" name = "oneCard" value="Yes">
 <label for="oneCardYes">Yes</label>
 <input type="radio" id = "oneCardNo" name = "oneCard" value="No">
 <label for="oneCardNo">No</label>
 </input>
-<br>
-<br>
+</section>
 
-<button onclick="submit()">Submit Rating</button>
+<br>
+<a class="rate-btn" href="/page1.html">
+    <button onclick="submit()">Submit Rating</button>
+</a>
+<br>
 
 </body>
 </html>
