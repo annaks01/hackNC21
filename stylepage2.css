@@ -83,6 +83,8 @@ button:hover {
 .hours-title {
   font-family: var(--primary-font);
   font-size: 25px;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 .hour-desc {
@@ -222,4 +224,8 @@ button:hover {
   font-weight: 700px;
   font-family: var(--primary-font);
   font-size: 20px;
+}
+
+.day {
+  padding-bottom: 5px;
 }
