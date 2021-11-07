@@ -60,29 +60,52 @@ function initRateUL() {
 function initPage2() {
     console.log("init page 2: " + localStorage.getItem("genderNeutralPercent"));
     var link = window.location.href;
-    var params = link.split("?");
-    var ratings = new Array(8);
-    for(let i = 1; i <= 8; i++) {
-        console.log(params);
-        var gn = params[i];
-        console.log(gn);
-        var gn2 = gn.split("=")[1];
-        console.log(gn2);
-        var croppedGn = Math.round(Number(gn2) * 100);
-        console.log(croppedGn);
-        ratings[i-1] = croppedGn;
-    }
-    console.log(ratings);
-    document.getElementById("genNeu").innerHTML = ratings[0];
-    document.getElementById("venMac").innerHTML = ratings[1];
-    document.getElementById("foo").innerHTML = ratings[2];
-    document.getElementById("staDes").innerHTML = ratings[3];
-    document.getElementById("pri").innerHTML = ratings[4];
-    document.getElementById("cop").innerHTML = ratings[5];
-    document.getElementById("cha").innerHTML = ratings[6];
-    document.getElementById("oneCar").innerHTML = ratings[7];
 
+    if(link.includes("?")) {
+        var params = link.split("?");
+        var ratings = new Array(8);
+        for(let i = 1; i <= 8; i++) {
+            console.log(params);
+            var gn = params[i];
+            console.log(gn);
+            var gn2 = gn.split("=")[1];
+            console.log(gn2);
+            var croppedGn = Math.round(Number(gn2) * 100);
+            console.log(croppedGn);
+            ratings[i-1] = croppedGn;
+        }
+        console.log(ratings);
+        document.getElementById("genNeu").innerHTML = ratings[0];
+        document.getElementById("venMac").innerHTML = ratings[1];
+        document.getElementById("foo").innerHTML = ratings[2];
+        document.getElementById("staDes").innerHTML = ratings[3];
+        document.getElementById("pri").innerHTML = ratings[4];
+        document.getElementById("cop").innerHTML = ratings[5];
+        document.getElementById("cha").innerHTML = ratings[6];
+        document.getElementById("oneCar").innerHTML = ratings[7];
+
+        localStorage.setItem("genderNeutral", ratings[0]);
+        localStorage.setItem("vendingMachines", ratings[1]);
+        localStorage.setItem("food", ratings[2]);
+        localStorage.setItem("standingDesks", ratings[3]);
+        localStorage.setItem("printers", ratings[4]);
+        localStorage.setItem("copiers", ratings[5]);
+        localStorage.setItem("chargers", ratings[6]);
+        localStorage.setItem("oneCard", ratings[7]);
+    }
+
+    else {
+        document.getElementById("genNeu").innerHTML = localStorage.getItem("genderNeutral");
+        document.getElementById("venMac").innerHTML = localStorage.getItem("vendingMachines");
+        document.getElementById("foo").innerHTML = localStorage.getItem("food");
+        document.getElementById("staDes").innerHTML = localStorage.getItem("standingDesks");
+        document.getElementById("pri").innerHTML = localStorage.getItem("printers");
+        document.getElementById("cop").innerHTML = localStorage.getItem("copiers");
+        document.getElementById("cha").innerHTML = localStorage.getItem("chargers");
+        document.getElementById("oneCar").innerHTML = localStorage.getItem("oneCard");
+    }
 }
+
 
 function submit() {
     // gender neutral
@@ -191,7 +214,7 @@ function submit() {
 
     // returning to page 2
     console.log(localStorage.getItem("copiersPercent"));
-    window.location.href="pageUL.html?genderNeutral=" + localStorage.getItem("genderNeutralPercent") + 
+    window.location.href="../page2ul.html?genderNeutral=" + localStorage.getItem("genderNeutralPercent") + 
     "?vendingMachines=" + localStorage.getItem("vendingMachinesPercent") + 
     "?food=" + localStorage.getItem("foodPercent") + 
     "?standingDesks=" + localStorage.getItem("standingDesksPercent") + 

@@ -11,6 +11,10 @@
   width: 100%;
   background-color: rgb(29, 78, 95);
 }
+
+.home-link {
+  text-decoration: none;
+}
 .website-name {
   background-color: var(--primary-background);
   height: 80px;
@@ -25,7 +29,7 @@
 
 .study-info {
   background-color: var(--primary-color);
-  height: 1500px;
+  height: 1050px;
   width: 50%;
   float: left;
 }
@@ -41,7 +45,7 @@
 
 .summary {
   background-color: rgb(210, 239, 240);
-  height: 1500px;
+  height: 1050px;
   width: 50%;
   float: right;
 }
@@ -76,6 +80,7 @@ button:hover {
 
 .hours-title {
   font-family: var(--primary-font);
+  font-size: 25px;
 }
 
 .hour-desc {
@@ -85,10 +90,24 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-  font-size: 20px;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 80px;
+  font-family: var(--secondary-font);
+}
+
+.hour-desc-ul {
+  display: block;
+  background-color: rgba(241, 240, 225, 0.74);
+  height: 275px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  font-size: 15px;
   text-align: center;
   padding-top: 10px;
-  margin-top: 80px;
+  font-family: var(--secondary-font);
 }
 
 .space-description {
@@ -101,7 +120,7 @@ button:hover {
   text-align: center;
   padding-top: 10px;
   margin-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .description-title {
@@ -166,9 +185,25 @@ button:hover {
 
 .yes-no {
   margin-top: 50px;
-  background-color: aqua;
+  background-color: rgba(252, 251, 243, 0.74);
   width: 75%;
-  height: 500px;
+  height: 450px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+.rate-btn {
+  text-decoration: none;
+}
+
+.yn-title {
+  font-family: var(--primary-font);
+  padding-top: 40px;
+  font-size: 35px;
+}
+
+.yn-stats {
+  font-family: var(--secondary-font);
+  font-size: 17px;
 }

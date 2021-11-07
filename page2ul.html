@@ -6,16 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Spot Page</title>
     <link rel="stylesheet" href="stylepage2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <script src="ul/rateUL.js"></script>
 </head>
-<body>
-    <header class="website-name">WEB NAME</header>
+<body onload = "initPage2()">
+    <div class="top-border"></div>
+    <header class="website-name">Find My Study Spot</header>
 
     <section class="study-info">
         <div class="section-name">
-            Undergraduate Library (UL)
+            Undergraduate Library
         </div>
 
         <img class="spot-img" src="Pics/undergrad-lib.jpeg" alt="">
+        <div class="space-description">
+            <div class="description-title">
+            Description
+            </div>
+            <div class="description-text">
+                The Undergraduate Library rests in between the Student Stores and Wilson Library and is a popular spot for both individual and group work. There are many study rooms open for student reservations. This location also has a large collection of book and media collections, including a Media and Design Center.            </div>
+        </div>
+        <div class="hour-desc-ul">
+            <div class="hours">
+                <div class="hours-title">
+                    <h3>Hours</h3>
+                </div>
+                <div class="sun">
+                    Sunday: 11AM-2AM
+                </div>
+                <div class="mon">
+                    Monday: 8AM-2AM
+                </div>
+                <div class="tue">
+                    Tuesday: 8AM-2AM
+                </div>
+                <div class="wed">
+                    Wednesday: 8AM-2AM
+                </div>
+                <div class="thu">
+                    Thursday: 8AM-2AM
+                </div>
+                <div class="fri">
+                    Friday: 8AM-6PM
+                </div>
+                <div class="sat">
+                    Saturday: 10AM-5PM
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="summary">
@@ -23,16 +64,92 @@
             Rating Summary
         </div>
 
-        <button src="#" type="button">Rate This Spot!</button>
+        <a class="rate-btn" href="ul/rateUL.html">
+            <button type="button">Rate This Spot!</button>
+        </a>
 
-        <div class="rating"></div>
-        <div class="rating"></div>
-        <div class="rating"></div>
-        <div class="rating"></div>
-        <div class="rating"></div>
-        <div class="rating"></div>
-        <div class="rating"></div>
-        <div class="rating"></div>
+        
+        <!-- <div class="accesibility-cat">
+            <div class="rating-cat-name">Accesibility</div>
+            <div class="rating">
+                <div class="rating-cat-subname">Wheelchair Ramps</div>
+            </div>
+
+            <div class="rating">
+                <div class="rating-cat-subname">Elevators</div>
+            </div>
+            <div class="rating">
+                <div class="rating-cat-subname">Handicap-accessible Bathrooms</div>
+            </div>
+             -->
+        <!-- </div> -->
+
+        
+            <div class="rating">
+                <div class="rating-cat-subname">Noise Level</div>
+            </div>
+            <div class="rating">
+                <div class="rating-cat-subname">Natural Lighting</div>
+            </div>
+            <div class="rating">
+                <div class="rating-cat-subname">Private Study Spot Availability</div>
+            </div>
+            <div class="rating">
+                <div class="rating-cat-subname">Group Study Spot Availability</div>
+            </div>
+
+            <div class="yes-no">
+                <div class="yn-title">
+                Study Spot Features</div>
+                <div class="yn-stats">
+                    <p><a id = "genNeu"></a>% of people say there are gender neutral bathrooms.</p>
+                    <p><a id = "venMac"></a>% of people say there are vending machines.</p>
+                    <p><a id = "foo"></a>% of people say outside food and drinks are allowed.</p>
+                    <p><a id = "staDes"></a>% of people say there are standing desks.</p>
+                    <p><a id = "pri"></a>% of people say there are printers.</p>
+                    <p><a id = "cop"></a>% of people say there are copiers.</p>
+                    <p><a id = "cha"></a>% of people say there are phone chargers.</p>
+                    <p><a id = "oneCar"></a>% of people say your OneCard is required to enter.</p>
+                </div>
+            </div>
+            <!-- <div class="rating">
+                <div class="rating-cat-subname">Temperature</div>
+            </div>
+            <div class="rating">
+                <div class="rating-cat-subname">Crowdedness</div>
+            </div>
+        </div>
+
+        <div class="support-cat">
+            <div class="rating-cat-name">Support</div>
+           <div class="rating">
+                <div class="rating-cat-subname">IT Support</div>
+           </div>
+            <div class="rating">
+                <div class="rating-cat-subname">Staff Helpfulness</div>
+            </div> 
+            <div class="rating">
+                <div class="rating-cat-subname">Welcome Desk Availability</div>
+            </div> 
+            <div class="rating">
+                <div class="rating-cat-subname">Multilingual Support</div>
+            </div>  
+        </div>
+        
+        <div class="covid-cat">
+            <div class="rating-cat-name">COVID</div>
+           <div class="rating">
+               <div class="rating-cat-subname">Mask Enforcement</div>
+           </div>
+           <div class="rating">
+            <div class="rating-cat-subname">Social Distancing</div>
+        </div>  
+        <div class="rating">
+            <div class="rating-cat-subname">Sanitation</div>
+        </div> 
+        </div> -->
+       
+        
 
     </section>
 
