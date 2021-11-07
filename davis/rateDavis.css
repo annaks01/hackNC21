@@ -1,0 +1,116 @@
+:root {
+  --primary-font: "Bebas Neue", cursive;
+  --secondary-font: "Nunito Sans", sans-serif;
+  --primary-color: lightblue;
+  --secondary-color: black;
+  --primary-background: white;
+}
+
+.yn-title {
+  font-family: var(--primary-font);
+  padding-top: 40px;
+  font-size: 40px;
+  text-align: center;
+  padding-left: 5px;
+}
+
+.top-border {
+  height: 10px;
+  width: 100%;
+  background-color: rgb(29, 78, 95);
+}
+
+.section-name {
+  /* font-size: 40px; */
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  font-family: var(--primary-font);
+  padding-left: 5px;
+}
+
+.section-name-no-padding-bottom {
+  /* font-size: 40px; */
+  font-size: 20px;
+  padding-top: 5px;
+  /* padding-bottom: 5px; */
+  font-family: var(--primary-font);
+  padding-left: 5px;
+}
+
+.accessibility {
+  background-color: var(--primary-color);
+  height: 180px;
+  /* width: 50%; */
+  /* float: left; */
+}
+.atmosphere {
+  background-color: rgb(210, 239, 240);
+  height: 190px;
+  /* width: 50%; */
+  /* float: left; */
+}
+.support {
+  /* background-color: rgb(210, 239, 240); */
+  background-color: rgba(252, 251, 243, 0.74);
+  height: 180px;
+  /* width: 50%; */
+  /* float: left; */
+}
+.covid {
+  background-color: rgb(210, 239, 240);
+  /* background-color: rgba(252, 251, 243, 0.74); */
+  height: 180px;
+  /* width: 50%; */
+  /* float: left; */
+}
+.amenities {
+  background-color: var(--primary-color);
+  height: 720px;
+  /* width: 50%; */
+  /* float: left; */
+}
+
+button {
+  background-color: rgb(0, 102, 150);
+  display: block;
+  padding-left: 5px;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  border: none;
+  margin: 0 20px 20px 0;
+  transition: all 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--primary-font);
+}
+
+button:hover {
+  background-color: rgb(95, 147, 172);
+}
+
+.description-text {
+  font-size: 18px;
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  font-family: var(--secondary-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+.question-text {
+  font-size: 16px;
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  font-family: var(--secondary-font);
+}

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-    <script src="ul/rateUnion.js"></script>
+    <script src="union/rateUnion.js"></script>
 </head>
 <body onload = "initPage2()">
     <header class="header-fixed">
@@ -43,25 +43,25 @@
                     <h3>Hours</h3>
                 </div>
                 <div class="sun">
-                    Sunday: 11AM-2AM
+                    Sunday: 11AM - 1AM
                 </div>
                 <div class="mon">
-                    Monday: 8AM-2AM
+                    Monday: 7:30AM - 1AM
                 </div>
                 <div class="tue">
-                    Tuesday: 8AM-2AM
+                    Tuesday: 7:30AM - 1AM
                 </div>
                 <div class="wed">
-                    Wednesday: 8AM-2AM
+                    Wednesday: 7:30AM - 1AM
                 </div>
                 <div class="thu">
-                    Thursday: 8AM-2AM
+                    Thursday: 7:30AM - 1AM
                 </div>
                 <div class="fri">
-                    Friday: 8AM-6PM
+                    Friday: 7:30AM - 1AM
                 </div>
                 <div class="sat">
-                    Saturday: 10AM-5PM
+                    Saturday: 9AM - 1AM
                 </div>
             </div>
         </div>
@@ -93,34 +93,37 @@
         <!-- </div> -->
 
         
-            <div class="rating">
-                <div class="rating-cat-subname">Noise Level</div>
-            </div>
-            <div class="rating">
-                <div class="rating-cat-subname">Natural Lighting</div>
-            </div>
-            <div class="rating">
-                <div class="rating-cat-subname">Private Study Spot Availability</div>
-            </div>
-            <div class="rating">
-                <div class="rating-cat-subname">Group Study Spot Availability</div>
-            </div>
+        <div class="rating">
+            <div class="rating-cat-subname">Accessibility</div>
+            <div class="star-rating"><a id = "ha"></a> stars</div>
+        </div>
+        <div class="rating">
+            <div class="rating-cat-subname">Atmosphere</div>
+            <div class="star-rating"><a id = "a"></a> stars</div>
+        </div>
+        <div class="rating">
+            <div class="rating-cat-subname">Staff Support</div>
+            <div class="star-rating"><a id = "s"></a> stars</div>
+        </div>
+        <div class="rating">
+            <div class="rating-cat-subname">COVID-19 Precautions</div>
+            <div class="star-rating"><a id = "c"></a> stars</div>
+        </div>
 
-        
-            <div class="yes-no">
-                <div class="yn-title">
-                Study Spot Features</div>
-                <div class="yn-stats">
-                    <p><a id = "genNeu"></a>% of people say there are gender neutral bathrooms.</p>
-                    <p><a id = "venMac"></a>% of people say there are vending machines.</p>
-                    <p><a id = "foo"></a>% of people say outside food and drinks are allowed.</p>
-                    <p><a id = "staDes"></a>% of people say there are standing desks.</p>
-                    <p><a id = "pri"></a>% of people say there are printers.</p>
-                    <p><a id = "cop"></a>% of people say there are copiers.</p>
-                    <p><a id = "cha"></a>% of people say there are phone chargers.</p>
-                    <p><a id = "oneCar"></a>% of people say your OneCard is required to enter.</p>
-                </div>
+        <div class="yes-no">
+            <div class="yn-title">
+            Study Spot Features</div>
+            <div class="yn-stats">
+                <p><a id = "genNeu"></a><span style="font-weight: 700px;font-family: var(--primary-font);font-size: 20px;">%</span> of people say there are gender neutral bathrooms.</p>
+                <p><a id = "venMac"></a><span style="font-weight: 700px;font-family: var(--primary-font);font-size: 20px;">%</span> of people say there are vending machines.</p>
+                <p><a id = "foo"></a><span style="font-weight: 700px;font-family: var(--primary-font);font-size: 20px;">%</span> of people say outside food and drinks are allowed.</p>
+                <p><a id = "staDes"></a><span style="font-weight: 700px;font-family: var(--primary-font);font-size: 20px;">%</span> of people say there are standing desks.</p>
+                <p><a id = "pri"></a><span style="font-weight: 700px;font-family: var(--primary-font);font-size: 20px;">%</span> of people say there are printers.</p>
+                <p><a id = "cop"></a><span style="font-weight: 700px;font-family: var(--primary-font);font-size: 20px;">%</span> of people say there are copiers.</p>
+                <p><a id = "cha"></a><span style="font-weight: 700px;font-family: var(--primary-font);font-size: 20px;">%</span> of people say there are phone chargers.</p>
+                <p><a id = "oneCar"></a><span style="font-weight: 700px;font-family: var(--primary-font);font-size: 20px;">%</span> of people say your OneCard is required to enter.</p>
             </div>
+        </div>
             <!-- <div class="rating">
                 <div class="rating-cat-subname">Temperature</div>
             </div>

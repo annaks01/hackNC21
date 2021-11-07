@@ -72,7 +72,8 @@ button {
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  font-size: var(--primary-font);
+  font-family: var(--primary-font);
+  font-size: 20px;
 }
 
 button:hover {
@@ -176,12 +177,20 @@ button:hover {
   margin-right: auto;
   height: 20px;
   width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 20px;
 }
 
 .rating-cat-subname {
   font-family: var(--primary-font);
   font-size: 20px;
+}
+
+.star-rating {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  text-align: right;
 }
 
 .yes-no {
@@ -207,4 +216,10 @@ button:hover {
 .yn-stats {
   font-family: var(--secondary-font);
   font-size: 17px;
+}
+
+.yn-stats a {
+  font-weight: 700px;
+  font-family: var(--primary-font);
+  font-size: 20px;
 }
