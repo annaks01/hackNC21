@@ -1,5 +1,6 @@
 :root {
   --primary-font: "Bebas Neue", cursive;
+  --secondary-font: "Nunito Sans", sans-serif;
   --primary-color: lightblue;
   --secondary-color: black;
   --primary-background: white;
@@ -24,7 +25,7 @@
 
 .study-info {
   background-color: var(--primary-color);
-  height: 1000px;
+  height: 1500px;
   width: 50%;
   float: left;
 }
@@ -40,7 +41,7 @@
 
 .summary {
   background-color: rgb(210, 239, 240);
-  height: 1000px;
+  height: 1500px;
   width: 50%;
   float: right;
 }
@@ -50,15 +51,6 @@
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-}
-
-.rating {
-  height: 50px;
-  width: 80%;
-  background-color: white;
-  margin: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 button {
@@ -82,6 +74,10 @@ button:hover {
   background-color: rgb(95, 147, 172);
 }
 
+.hours-title {
+  font-family: var(--primary-font);
+}
+
 .hour-desc {
   display: block;
   background-color: rgba(241, 240, 225, 0.74);
@@ -91,8 +87,8 @@ button:hover {
   width: 40%;
   font-size: 20px;
   text-align: center;
-  padding-top: 5px;
-  margin-top: 20px;
+  padding-top: 10px;
+  margin-top: 80px;
 }
 
 .space-description {
@@ -105,10 +101,74 @@ button:hover {
   text-align: center;
   padding-top: 10px;
   margin-top: 20px;
+  padding-bottom: 100px;
+}
+
+.description-title {
+  font-family: var(--primary-font);
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 .description-text {
   font-size: 18px;
   text-align: left;
   padding-left: 15px;
+  font-family: var(--secondary-font);
+}
+
+.accesibility-cat {
+  height: 250px;
+  background-color: rgb(29, 78, 95);
+  margin: 20px;
+}
+
+.atmosphere-cat {
+  height: 400px;
+  background-color: rgb(29, 78, 95);
+  margin: 20px;
+}
+
+.support-cat {
+  height: 300px;
+  background-color: rgb(29, 78, 95);
+  margin: 20px;
+}
+
+.covid-cat {
+  height: 250px;
+  background-color: rgb(29, 78, 95);
+  margin: 20px;
+}
+
+.rating-cat-name {
+  text-align: center;
+  padding-top: 20px;
+  font-family: var(--primary-font);
+  color: white;
+  font-size: 25px;
+}
+
+.rating {
+  background-color: white;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  width: 70%;
+  padding: 20px;
+}
+
+.rating-cat-subname {
+  font-family: var(--primary-font);
+  font-size: 20px;
+}
+
+.yes-no {
+  margin-top: 50px;
+  background-color: aqua;
+  width: 75%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
