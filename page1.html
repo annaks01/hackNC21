@@ -38,13 +38,13 @@
     </a>
 
     <div class="middle">
-        <a href="page2.html">
+        <a href="page2ul.html">
         <img onclick="ulPage()" class="spot-img" src="https://library.unc.edu/wp-content/uploads/2013/07/ul_atrium1.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
         <p class="subheader">Undergraduate Library</p>
     </div>
     <script>
         function ulPage() {
-          spot-img.getElementById("page2.html");
+          spot-img.getElementById("page2ul.html");
         }
     </script>
     </a>
@@ -61,38 +61,8 @@
     </a>
   </div>
  
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" style="padding-top:0" onclick="this.style.display='none'">
-    <div>
-      <img id="img01">
-      <p id="caption"></p>
-    </div>
-  </div>
-
 <!-- End page content -->
 </div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
 
 </body>
 </html>
